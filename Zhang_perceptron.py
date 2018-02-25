@@ -5,7 +5,7 @@ import getopt
 import sys
 
 # Parser training data 
-with open('/u/cs246/data/adult/a7a.train', 'r') as f:
+with open('a7a.train', 'r') as f:
     lines = f.readlines()
     line_num = len(lines)
     #print lines
@@ -26,7 +26,7 @@ for i in range(line_num):
         training_data[i][0][int(j)-1] = 1
 
 # Parser test data
-with open('/u/cs246/data/adult/a7a.test', 'r') as f:
+with open('a7a.test', 'r') as f:
     lines = f.readlines()
     line_num = len(lines)
     # print lines
